@@ -1,0 +1,248 @@
+/* ===== Base ===== */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #FAF7F2;
+    color: #1E1E2E;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #3B3FB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo__text {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1E1E2E;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+}
+
+.nav__link {
+    font-size: 16px;
+    color: #6B6B7B;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: #1E1E2E;
+    font-weight: 700;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-btn {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E2D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-btn__badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EF4444;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-btn {
+    padding: 12px 24px;
+    background-color: #3B3FB6;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+}
+
+.signup-btn:hover {
+    background-color: #2C2F8F;
+}
+
+/* ===== Hero ===== */
+
+.hero {
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.hero__content {
+    flex: 1;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1E1E2E;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E2D9;
+    border-radius: 10px;
+}
+
+.badge img {
+    width: 18px;
+    height: 18px;
+}
+
+.hero__title {
+    margin-top: 24px;
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.hero__text {
+    margin-top: 24px;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6B6B7B;
+}
+
+.hero__buttons {
+    margin-top: 36px;
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn--primary {
+    background-color: #3B3FB6;
+    color: #FFFFFF;
+}
+
+.btn--primary:hover {
+    background-color: #2C2F8F;
+}
+
+.btn--outline {
+    background-color: transparent;
+    border: 2px solid #3B3FB6;
+    color: #3B3FB6;
+}
+
+.btn--outline:hover {
+    background-color: #E9E6FB;
+}
+
+.readers {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.readers__avatars {
+    display: flex;
+}
+
+.readers__avatars img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 3px solid #FAF7F2;
+    object-fit: cover;
+}
+
+.readers__avatars img + img {
+    margin-left: -12px;
+}
+
+.readers__text {
+    font-size: 15px;
+    color: #6B6B7B;
+}
+
+.readers__text strong {
+    font-weight: 700;
+    color: #1E1E2E;
+}
+
+.hero__image img {
+    width: 500px;
+    border-radius: 32px;
+}
